@@ -1,0 +1,32 @@
+meta {
+  name: request/isin
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/tools/instrumenthub/request/isin?type=isin&force=false&norequest=false
+  body: text
+  auth: inherit
+}
+
+params:query {
+  type: isin
+  force: false
+  norequest: false
+}
+
+body:json {
+  {
+    
+  }
+}
+
+body:text {
+  XS3430526346
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

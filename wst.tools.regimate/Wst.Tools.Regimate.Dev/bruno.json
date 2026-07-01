@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Wst.Tools.Regimate",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

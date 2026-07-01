@@ -1,0 +1,32 @@
+meta {
+  name: request/isin
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://apps-stg.steubing.com/tools/instrumenthub/request/isin?type=isin&force=true&norequest=false
+  body: text
+  auth: inherit
+}
+
+params:query {
+  type: isin
+  force: true
+  norequest: false
+}
+
+body:json {
+  {
+    
+  }
+}
+
+body:text {
+  EU000A1Z99Z8
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
