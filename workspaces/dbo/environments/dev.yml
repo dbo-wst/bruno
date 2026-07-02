@@ -1,0 +1,4 @@
+name: dev
+variables:
+  - name: basePath
+    value: https://apps-dev.steubing.com

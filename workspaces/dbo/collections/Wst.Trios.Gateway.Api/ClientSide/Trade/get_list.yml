@@ -1,0 +1,22 @@
+info:
+  name: get_list
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{basePath}}/trios/gateway/api/clientside/trades?pageNumber=1&pageSize=10"
+  params:
+    - name: pageNumber
+      value: "1"
+      type: query
+    - name: pageSize
+      value: "10"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

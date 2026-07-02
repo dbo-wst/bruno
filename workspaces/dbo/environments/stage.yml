@@ -1,0 +1,4 @@
+name: stage
+variables:
+  - name: basePath
+    value: https://apps-stg.steubing.com/

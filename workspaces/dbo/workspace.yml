@@ -1,0 +1,14 @@
+opencollection: 1.0.0
+info:
+  name: "dbo"
+  type: workspace
+
+collections:
+  - name: "Wst.Tools.Regimate"
+    path: "collections/Wst.Tools.Regimate"
+  - name: "Wst.Trios.Gateway.Api"
+    path: "collections/Wst.Trios.Gateway.Api"
+
+specs:
+
+docs: ''
