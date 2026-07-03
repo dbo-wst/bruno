@@ -2,3 +2,11 @@ name: local
 variables:
   - name: basePath
     value: https://apps-local.steubing.com
+  - name: brokerSideOrdersPath
+    value: /broker-side/orders
+  - name: brokerSideTradesPath
+    value: /broker-side/trades
+  - name: clientSideOrdersPath
+    value: /client-side/orders
+  - name: clientSideTradesPath
+    value: /client-side/trades

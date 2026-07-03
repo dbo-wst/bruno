@@ -5,7 +5,7 @@ info:
 
 http:
   method: DELETE
-  url: "{{basePath}}/trios/gateway/api/brokerside/trades/bb2a54b0-1766-40fd-86c0-13fffd62042a"
+  url: "{{basePath}}/trios/gateway/api{{brokerSideTradesPath}}/bb2a54b0-1766-40fd-86c0-13fffd62042a"
   body:
     type: json
     data: |-

@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{basePath}}/trios/gateway/api/brokerside/trades?pageNumber=1&pageSize=10"
+  url: "{{basePath}}/trios/gateway/api{{brokerSideTradesPath}}?pageNumber=1&pageSize=10"
   params:
     - name: pageNumber
       value: "1"

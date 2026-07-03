@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{basePath}}/trios/gateway/api/clientside/orders"
+  url: "{{basePath}}/trios/gateway/api{{clientSideOrdersPath}}"
   body:
     type: json
     data: |-
