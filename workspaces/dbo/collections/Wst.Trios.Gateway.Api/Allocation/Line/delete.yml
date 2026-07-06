@@ -1,11 +1,11 @@
 info:
-  name: create
+  name: delete
   type: http
-  seq: 1
+  seq: 4
 
 http:
-  method: POST
-  url: "{{basePath}}/trios/api{{clientSideOrdersPath}}"
+  method: DELETE
+  url: "{{basePath}}/trios/api{{allocationLinesPath}}/bb2a54b0-1766-40fd-86c0-13fffd62042a"
   body:
     type: json
     data: |-

@@ -5,12 +5,12 @@ info:
 
 http:
   method: POST
-  url: "{{basePath}}/trios/api{{clientSideOrdersPath}}"
+  url: "{{basePath}}/trios/api{{masterDataVenuesPath}}"
   body:
     type: json
     data: |-
       {
-        "sampleField": "asdfasdasdff"
+        "sampleField": "{{$randomBankAccount}}"
       }
   auth: inherit
 

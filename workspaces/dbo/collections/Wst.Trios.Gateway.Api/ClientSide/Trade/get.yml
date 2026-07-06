@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{basePath}}/trios/gateway/api{{clientSideTradesPath}}/bb2a54b0-1766-40fd-86c0-13fffd62042a"
+  url: "{{basePath}}/trios/api{{clientSideTradesPath}}/bb2a54b0-1766-40fd-86c0-13fffd62042a"
   auth: inherit
 
 settings:

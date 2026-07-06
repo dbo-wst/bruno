@@ -5,12 +5,12 @@ info:
 
 http:
   method: DELETE
-  url: "{{basePath}}/trios/api{{brokerSideTradesPath}}/bb2a54b0-1766-40fd-86c0-13fffd62042a"
+  url: "{{basePath}}/trios/api{{allocationBatchesPath}}/bb2a54b0-1766-40fd-86c0-13fffd62042a"
   body:
     type: json
     data: |-
       {
-        "sampleField": "asdfasdasdff"
+        "sampleField": "{{$randomBankAccount}}"
       }
   auth: inherit
 
