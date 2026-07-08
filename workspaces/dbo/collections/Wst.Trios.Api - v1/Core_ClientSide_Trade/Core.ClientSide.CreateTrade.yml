@@ -1,0 +1,154 @@
+info:
+  name: Core.ClientSide.CreateTrade
+  type: http
+  seq: 1
+  tags:
+    - Core_ClientSide_Trade
+
+http:
+  method: POST
+  url: "{{baseUrl}}/client-side/trades"
+  body:
+    type: json
+    data: |-
+      {
+        "orderId": "",
+        "effectiveDate": "",
+        "qty": "",
+        "price": "",
+        "amount": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: 201 Response
+    description: Created
+    request:
+      url: "{{baseUrl}}/client-side/trades"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "orderId": "",
+            "effectiveDate": "",
+            "qty": "",
+            "price": "",
+            "amount": ""
+          }
+    response:
+      status: 201
+      statusText: Created
+      headers:
+        - name: Content-Type
+          value: application/json
+      body:
+        type: json
+        data: |-
+          {
+            "tradeId": "",
+            "orderId": "",
+            "effectiveDate": "",
+            "qty": "",
+            "price": "",
+            "amount": ""
+          }
+  - name: 400 Response
+    description: Bad Request
+    request:
+      url: "{{baseUrl}}/client-side/trades"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "orderId": "",
+            "effectiveDate": "",
+            "qty": "",
+            "price": "",
+            "amount": ""
+          }
+    response:
+      status: 400
+      statusText: Bad Request
+      headers:
+        - name: Content-Type
+          value: application/problem+json
+      body:
+        type: json
+        data: |-
+          {
+            "type": "",
+            "title": "",
+            "status": "",
+            "detail": "",
+            "instance": ""
+          }
+  - name: 409 Response
+    description: Conflict
+    request:
+      url: "{{baseUrl}}/client-side/trades"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "orderId": "",
+            "effectiveDate": "",
+            "qty": "",
+            "price": "",
+            "amount": ""
+          }
+    response:
+      status: 409
+      statusText: Conflict
+      headers:
+        - name: Content-Type
+          value: application/problem+json
+      body:
+        type: json
+        data: |-
+          {
+            "type": "",
+            "title": "",
+            "status": "",
+            "detail": "",
+            "instance": ""
+          }
+  - name: 500 Response
+    description: Internal Server Error
+    request:
+      url: "{{baseUrl}}/client-side/trades"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "orderId": "",
+            "effectiveDate": "",
+            "qty": "",
+            "price": "",
+            "amount": ""
+          }
+    response:
+      status: 500
+      statusText: Internal Server Error
+      headers:
+        - name: Content-Type
+          value: application/problem+json
+      body:
+        type: json
+        data: |-
+          {
+            "type": "",
+            "title": "",
+            "status": "",
+            "detail": "",
+            "instance": ""
+          }
