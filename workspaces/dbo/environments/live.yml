@@ -1,4 +1,0 @@
-name: live
-variables:
-  - name: basePath
-    value: https://apps.steubing.com/

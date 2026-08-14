@@ -1,0 +1,7 @@
+info:
+  name: Core_MasterData_Venue
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

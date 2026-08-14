@@ -1,0 +1,136 @@
+info:
+  name: Core.Allocation.CreateBatch
+  type: http
+  seq: 1
+  tags:
+    - Core_Allocation_Batch
+
+http:
+  method: POST
+  url: "{{baseUrl}}/allocation/batches"
+  body:
+    type: json
+    data: |-
+      {
+        "effectiveDate": "",
+        "status": 0
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+examples:
+  - name: 201 Response
+    description: Created
+    request:
+      url: "{{baseUrl}}/allocation/batches"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "effectiveDate": "",
+            "status": 0
+          }
+    response:
+      status: 201
+      statusText: Created
+      headers:
+        - name: Content-Type
+          value: application/json
+      body:
+        type: json
+        data: |-
+          {
+            "batchId": "",
+            "effectiveDate": "",
+            "status": 0
+          }
+  - name: 400 Response
+    description: Bad Request
+    request:
+      url: "{{baseUrl}}/allocation/batches"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "effectiveDate": "",
+            "status": 0
+          }
+    response:
+      status: 400
+      statusText: Bad Request
+      headers:
+        - name: Content-Type
+          value: application/problem+json
+      body:
+        type: json
+        data: |-
+          {
+            "type": "",
+            "title": "",
+            "status": "",
+            "detail": "",
+            "instance": ""
+          }
+  - name: 409 Response
+    description: Conflict
+    request:
+      url: "{{baseUrl}}/allocation/batches"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "effectiveDate": "",
+            "status": 0
+          }
+    response:
+      status: 409
+      statusText: Conflict
+      headers:
+        - name: Content-Type
+          value: application/problem+json
+      body:
+        type: json
+        data: |-
+          {
+            "type": "",
+            "title": "",
+            "status": "",
+            "detail": "",
+            "instance": ""
+          }
+  - name: 500 Response
+    description: Internal Server Error
+    request:
+      url: "{{baseUrl}}/allocation/batches"
+      method: POST
+      body:
+        type: json
+        data: |-
+          {
+            "effectiveDate": "",
+            "status": 0
+          }
+    response:
+      status: 500
+      statusText: Internal Server Error
+      headers:
+        - name: Content-Type
+          value: application/problem+json
+      body:
+        type: json
+        data: |-
+          {
+            "type": "",
+            "title": "",
+            "status": "",
+            "detail": "",
+            "instance": ""
+          }

@@ -1,0 +1,4 @@
+name: stage
+variables:
+  - name: baseUrl
+    value: https://apps-stg.steubing.com
